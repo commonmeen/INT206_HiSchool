@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.TestHelloWorld;
 
 /**
  *
@@ -32,12 +33,14 @@ public class HelloServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
+        try  {
             response.setContentType("text/html;charset=UTF-8");
             TestHelloWorld ts = new TestHelloWorld();
             String message = ts.showHelloWorldFromDB();
             request.setAttribute("message", message);
             getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
+        }catch(Exception e){
+            
         }
     }
 
