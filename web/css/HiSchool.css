@@ -1,0 +1,16 @@
+.bg-hischool{
+    background-color: rgba(0, 155, 141, 0.5);
+}
+
+.HelloWorld-Margin{
+    margin-top: 5%;
+}
+
+.HelloWorld-Text{
+    color: #FFFFFF;
+}
+
+body{
+    background-image: url("../assets/HelloWorldBG.png");
+    background-color: #FFFFFF;
+}
