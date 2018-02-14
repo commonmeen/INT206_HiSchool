@@ -1,7 +1,9 @@
-/target/
+/target
+/nb-configuration.xml
 /src/main/resources/db-environment.properties
 
-# Created by https://www.gitignore.io/api/git,java,macos,maven,windows,netbeans,intellij
+
+# Created by https://www.gitignore.io/api/git,java,macos,maven,windows,netbeans,java-web,intellij
 
 ### Git ###
 *.orig
@@ -95,6 +97,10 @@ fabric.properties
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+### Java-Web ###
+## ignoring target file
+target/
+
 ### macOS ###
 *.DS_Store
 .AppleDouble
@@ -123,7 +129,6 @@ Temporary Items
 .apdisk
 
 ### Maven ###
-target/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -167,4 +172,4 @@ $RECYCLE.BIN/
 *.lnk
 
 
-# End of https://www.gitignore.io/api/git,java,macos,maven,windows,netbeans,intellij
+# End of https://www.gitignore.io/api/git,java,macos,maven,windows,netbeans,java-web,intellij
